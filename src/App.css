@@ -1,0 +1,44 @@
+.App {
+  max-width: 1200px;
+  min-width: 950px;
+  margin: 0 auto;
+  display: flex;
+  min-height: calc(100Vh - 30px);
+  flex-direction: column;
+}
+
+.App-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #4579a2;
+}
+
+.App-title {
+  font: 300 1.5em "Roboto", "Arial", sans-serif;
+  font-size: 1.5em;
+  text-transform: lowercase;
+}
+
+.App-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.App-intro {
+    margin-bottom: 10em;
+    color: #444;
+    font: 300 1.2em "Roboto", "Arial", sans-serif;
+}
+
+.App-intro h2 {
+  font: 400 50px/1 "Playfair Display", serif;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

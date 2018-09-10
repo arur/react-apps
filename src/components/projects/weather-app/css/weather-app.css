@@ -1,0 +1,137 @@
+:root {
+  --main-bg-color: #0097a7;
+  --secondary-bg-color: #00838f;
+  --main-color: rgba(255, 255, 255, 0.8);
+  --secondary-color: rgba(255, 255, 255, 0.6);
+}
+
+.weather-app p {
+  margin: 0;
+}
+
+.weather-app {
+  font: 16px/1.6 Arial, sans-serif;
+  width: 26em;
+  margin: 0 auto;
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+  position: relative;
+}
+
+.header {
+  padding: 1em;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 1.75em;
+  margin: 0.75em;
+  line-height: 1;
+}
+
+.location {
+  text-align: left;
+}
+
+.location-dropdown {
+  padding: 1em;
+  text-align: center;
+  background-color: var(--secondary-bg-color);
+}
+
+.location-dropdown select {
+  height: 2em;
+  box-sizing: border-box;
+}
+
+.weather-detail {
+  padding: 1em;
+}
+
+.weather-detail h2 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.25em;
+}
+
+.location {
+  margin-bottom: 1em;
+}
+
+.weather {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.temperature,
+.hilow,
+.condition {
+  text-align: center;
+}
+
+.temperature {
+  font-size: 5em;
+  flex: 3;
+}
+
+.hilow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.25em;
+}
+
+.condition {
+  padding-top: 1.75em;
+  flex: 2;
+}
+
+.condition i {
+  font-size: 3.125em;
+  margin-bottom: 0.2em;
+}
+
+.forecast-list {
+  padding: 0;
+  display: flex;
+}
+
+.forecast-item {
+  display: inline-block;
+  flex:1;
+  text-align: center;
+}
+
+.forecast-item h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.75em;
+  padding: 1.25em;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-color);
+}
+
+.footer a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: rgba(255,255,255,1);
+}
+
+.error {
+  text-align: center;
+  padding: 1em;
+}
+
+.error:before {
+  font-family: 'weathericons';
+  content: "\f075";
+  display: block;
+  font-size: 6.25em;
+}
